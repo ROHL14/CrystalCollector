@@ -14,38 +14,33 @@ $('#playbtn').click(function(){
 });
 
 $('#resetbtn').click(function(){
-    reset();
+    reset(true);
     $('.block').hide();
 });
 
 //functions of the game
 function play(){
     $('.block').show();
-    keepplaying();
+    reset(false);
     score= Math.floor(Math.random()*(120-19)+19);
     $('#Score').text(score);
     for (i=0; i<4; i++){
         crystalsvalue[i]= Math.floor(Math.random()*(12-1)+1);
     }
-    console.log(crystalsvalue);
 }
 
-function keepplaying(){
+function getRandom(){};
+
+function reset(e){
     score=0;
     yourscore=0;
     crystalsvalue=[];
     $('#Score').text('0');
     $('#yourScore').text('0');
-}
-
-function reset(){
-    score=0;
-    yourscore=0;
-    crystalsvalue=[];
-    $('#Score').text('0');
-    $('#yourScore').text('0');
-    $('#win').text('0');
-    $('#lose').text('0');
+    if(e){
+        $('#win').text('0');
+        $('#lose').text('0');
+    }
 }
 
 function results(){
@@ -61,7 +56,7 @@ function results(){
 }
 
 //Event of the crystals
-$('.block').click(function(e){
+$('.block').on('click', function(){
     btnid=this.id;
     yourscore+= crystalsvalue[btnid];
     $('#yourScore').text(yourscore);
