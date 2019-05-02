@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Reset-->
+    <link rel="stylesheet" href="Assets/CSS/reset.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--Style-->
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <title>Crystal Collector</title>
+</head>
+<body>
+    <div id="rules" class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-md-12 bg-info">
+                <h1>CRYSTAL COLLECTOR</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2 bg-secondary">
+                <h6>You will be given a random number at the start of the game.</h6>
+            </div>
+            <div class="col-md-2">
+                <h6>There are four crystals below. By cliking on a crystal you will add a specific amount of points to your total score.</h6>
+            </div>
+            <div class="col-md-2 bg-secondary">
+                <h6>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</h6>
+            </div>
+            <div class="col-md-2">
+                <h6>The value of each crystal is hidden from you until you click on it.</h6>
+            </div>
+            <div class="col-md-2 bg-secondary">
+                <h6>Each time when the game starts, the game will change the values of each crystal.</h6>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 5%">
+        <div id="crystalsbtn" class="row">
+            <button class="block btn btn-primary" id="0">
+                <img src="Assets/Images/purplegem.jpg" class="img-fluid"></img>
+            </button>
+            <button class="block btn btn-warning" id="1" >
+                <img src="Assets/Images/greengem.jpg" class="img-fluid"></img>
+            </button>
+            <button class="block btn btn-danger" id="2">
+                <img src="Assets/Images/orangegem.jpg" class="img-fluid"></img>
+            </button>
+            <button class="block btn btn-success" id="3">
+                <img src="Assets/Images/skybluegem.jpg" class="img-fluid"></img>
+            </button>
+        </div>
+        <div id="scores" class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h4>The number:</h4>
+                <h4 id="Score"></h4>
+            </div>
+            <div class="col-md-5">
+                <h4>Your score:</h4>
+                <h4 id="yourScore"></h4>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div id="winlose" class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h4>Wins:</h4>
+                <h4 id="win">0</h4>
+            </div>
+            <div class="col-md-5">
+                <h4>Loses:</h4>
+                <h4 id="lose">0</h4>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 5%; margin-bottom: 5%">    
+        <div id="gamebtn" class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <button id="playbtn" class="btn btn-block btn-success">Play</button>
+            </div>
+            <div class="col-md-5">
+                <button id="resetbtn" class="btn btn-block btn-primary">Reset</button>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Functions File-->
+    <script type="text/javascript" src="Assets/JS/functions.js"></script>
+</body>
+</html>

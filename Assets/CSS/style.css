@@ -1,0 +1,61 @@
+body{
+    text-align: center;
+    background-image: url("../Images/simple_patterns.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: aliceblue
+}
+
+#rules{
+    color: aliceblue
+}
+
+h6{
+    margin: 10px;
+}
+
+#scores{
+    margin-top: 5%;
+}
+
+#winlose{
+    margin-top: 5%;
+}
+
+#gamebtn{
+    margin-top: 5%;
+}
+
+.block{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-style: outset;
+}
+
+@media (min-width: 400px) {
+    .block{
+        width: 80px;
+        height: 80px;
+        border-style: outset;
+    }
+}
+
+@media (min-width: 768px) {
+    .block{
+        width: 100px;
+        height: 100px;
+        border-style: outset;
+    }
+}
+
+@media (min-width: 900px) { 
+    .block{
+        width: 150px;
+        height: 150px;
+        border-style: outset;
+    }
+  }
+
