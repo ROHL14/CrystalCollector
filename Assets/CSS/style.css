@@ -35,5 +35,32 @@ h6{
     border-style: outset;
 }
 
+@media (min-width: 400px) {  
+    .block{
+        width: 90px;
+        height: 90px;
+        margin: auto;
+        border-style: outset;
+    }
+}
+
+@media (min-width: 700px) {  
+    .block{
+        width: 120px;
+        height: 120px;
+        margin: auto;
+        border-style: outset;
+    }
+}
+
+@media (min-width: 900px) {  
+    .block{
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        border-style: outset;
+    }
+}
+
 
 
