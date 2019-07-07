@@ -1,66 +1,63 @@
-body{
-    text-align: center;
-    background-image: url("../Images/simple_patterns.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: aliceblue
+body {
+  text-align: center;
+  background-image: url("../Images/simple_patterns.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: aliceblue;
 }
 
-#rules{
-    color: aliceblue
+#rules {
+  color: aliceblue;
 }
 
-h6{
-    margin: 10px;
+h6 {
+  margin: 10px;
 }
 
-#scores{
-    margin-top: 5%;
+#scores {
+  margin-top: 5%;
 }
 
-#winlose{
-    margin-top: 5%;
+#winlose {
+  margin-top: 5%;
 }
 
-#gamebtn{
-    margin-top: 5%;
+#gamebtn {
+  margin-top: 5%;
 }
 
-.block{
+.block {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-style: outset;
+}
+
+@media (min-width: 400px) {
+  .block {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-style: outset;
+  }
+}
+
+@media (min-width: 700px) {
+  .block {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border-style: outset;
+  }
+}
+
+@media (min-width: 900px) {
+  .block {
     width: 150px;
     height: 150px;
     margin: auto;
     border-style: outset;
+  }
 }
-
-@media (min-width: 400px) {  
-    .block{
-        width: 90px;
-        height: 90px;
-        margin: auto;
-        border-style: outset;
-    }
-}
-
-@media (min-width: 700px) {  
-    .block{
-        width: 120px;
-        height: 120px;
-        margin: auto;
-        border-style: outset;
-    }
-}
-
-@media (min-width: 900px) {  
-    .block{
-        width: 150px;
-        height: 150px;
-        margin: auto;
-        border-style: outset;
-    }
-}
-
-
-
